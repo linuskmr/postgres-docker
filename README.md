@@ -1,10 +1,10 @@
-# rdb-db
+# postgres-docker
 
 This is a docker-compose file which creates a docker container for a postgres database and one for pgadmin.
 
-The `Installation and Usage` section describes how to set up a sample database.
+The [Installation and Usage](#installation-and-usage) section describes how to set up a sample database.
 
-# Installation and Usage
+## Installation and Usage
 
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) on your computer.
 
@@ -25,10 +25,23 @@ Right click on `sample-database` in the left sidebar in pgadmin and choose `Rest
 
 Now you can expand `sample-database` in the left sidebar and go to `Schemas → public → Tables`. Now you can right click on a table and choose the `View/Edit Data` to get an overview over the table or select `Query Tool` to perform SQL Queries.
 
+## Uninstall
 
-
-If you want, you can stop the docker containers with:
+Go the directory of this repository on your computer and stop the docker containers with:
 
 ```docker
 docker-compose down
 ```
+
+Find the container IDs for the images `dpage/pgadmin4` and `postgres`.
+
+```docker
+docker container ls -a
+```
+
+Delete the docker images using (change `PGADMIN_ID` and `POSTGRES_ID` with their actual ID's):
+
+```docker
+docker rm PGADMIN_ID POSTGRES_ID
+```
+
