@@ -16,7 +16,7 @@ docker-compose up -d
 
 Open `localhost:9876` in your browser and login to pgadmin with user `user@domain.com` and password `SuperSecret`.
 
-Now you should see the home screen of pgadmin. In the left sidebar right click on `Servers → Create → Server`. For `Name` choose anything you want, e.g. `db-server`. Click on `Connection` and type in `localhost` for the host, `5432` for port, `admin` as username, `secret` as password and select `save password`.
+Now you should see the home screen of pgadmin. In the left sidebar right click on `Servers → Create → Server`. For `Name` choose anything you want, e.g. `db-server`. Click on `Connection` and type in `localhost` or your local network name / ip address for the host, `5432` for port, `admin` as username, `secret` as password and select `save password`.
 
 Expand the `Servers` tab in the left sidebar and after that the `db-server`. Right click on `Databases → Create → Database`. Choose a name for the database like `sample-database` and click on `Save`.
 
