@@ -20,7 +20,7 @@ Now you should see the home screen of pgadmin. In the left sidebar right click o
 
 Expand the `Servers` tab in the left sidebar and after that the `db-server`. Right click on `Databases → Create → Database`. Choose a name for the database like `sample-database` and click on `Save`.
 
-Download and unzip a SQL dump on your computer named `sample-database.zip`.
+Download and unzip a SQL dump on your computer named `sample-database.backup`.
 Right click on `sample-database` in the left sidebar in pgadmin and choose `Restore`. Now click on the three dots in the filename input, click on the icon for `upload file`, upload the `sample-databas.backup`, close the upload window by clicking the x in the top right corner, choose `Probedatenbank.backup` and click `Select` and `Restore`.
 
 Now you can expand `sample-database` in the left sidebar and go to `Schemas → public → Tables`. Now you can right click on a table and choose the `View/Edit Data` to get an overview over the table or select `Query Tool` to perform SQL Queries.
